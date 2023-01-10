@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: light;
+  text-align: center;
+}
