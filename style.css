@@ -8,3 +8,78 @@ html, body {
   font-weight: light;
   text-align: center;
 }
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; /*Increased the height of the navigation bar */
+  background-color: #333; /*Changed the background color to black */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+#nav li {
+  margin: 0 10px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #ffffff; 
+  font-family: 'Roboto', Sans-Serif;
+  font-weight: bolder;
+  /*Changed the text color to white */
+  font-size: 15px; /* Increased the font size */
+}
+
+#nav input[type=text] {
+    position: fixed;
+    padding: 6px; /*increased the padding for better visibility */
+    margin-top: 8px;
+    margin-left: 350px;
+  /* added some margin */
+    font-size: 10px; /* increased the font size */
+    border: none; /*removed the border */
+    width: 300px; /* set the width of input*/
+}
+
+#nav button[type=submit] {
+    padding: 6px; /* increased the padding */
+    margin-top: 8px; /* added some margin */
+    margin-left: 440px; /*added some margin */
+    background: #fff; /* changed the background color of the button */
+    color: #333; /* changed the text color of the button */
+    font-size: 10px; /* increased the font size of the button */
+    border: none; /*removed the border */
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #nav ul {
+    flex-wrap: wrap; /* wrap the elements if the screen width is less than 600px */
+  }
+  
+  #nav li {
+    width: 100%; /* make each li element take up the full width of the screen */
+  }
+  
+  #nav form {
+    width: 100%; /* make the form take up the full width of the screen */
+    margin-top: 10px; /* add some margin for spacing */
+  }
+  
+  #nav input[type=text], #nav button[type=submit] {
+    width: 90%; /* reduce the width of the input and button */
+    margin: auto; /* center the elements inside the form */
+  }
+}
+
