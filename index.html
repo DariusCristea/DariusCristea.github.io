@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Darius Cristea</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  
+  <style>
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Section styles */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Image styles */
+  img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+  }
+</style>
+
 </head>
-
+  
 <body>
-  <div>
-    <h1 id="main_header">Darius' Website</h1>
-    <p style="color:red;">This is going to be my personal portfolio website</p>
-  </div>
-  <div id="nav">
-    <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Log</a></li>
-      <li>
-        <form>
-          <input type="text" placeholder="Search..">
-          <button type="submit">Search</button>
-        </form>
-      </li>
-    </ul>
-  </div>
-
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h1>About</h1>
+      <img src="profile-photo.jpg" alt="My Profile Photo">
+      <p>Insert a short bio here.</p>
+    </section>
+    
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+    </section>
+    
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>Insert contact information and a contact form here.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Copyright © 2022 Darius_Cristea</p>
+  </footer>
 </body>
-
 </html>
